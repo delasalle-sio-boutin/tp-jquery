@@ -28,8 +28,8 @@
 			$(document).ready(initialisations);
 			
 			function initialisations(){
-				xOffset =20;
-				yOffset =10;
+				xOffset = -1;
+				yOffset = -7;
 				
 				$("a.lien").mouseenter(entreeSourisSurLien);
 				$("a.lien").mouseleave(sortieSourisDuLien);
@@ -50,7 +50,7 @@
 				$("#infobulle").remove();
 			}
 			
-			function deplacementSourie(e){
+			function deplacementSouris(e){
 				$("#infobulle").css("top", (e.pageY - yOffset) + "px");
 				$("#infobulle").css("left", (e.pageX - xOffset) + "px");
 			}
